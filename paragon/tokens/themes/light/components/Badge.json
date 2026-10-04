@@ -1,0 +1,14 @@
+{
+  "_comment": "Brand badge-light variant colors. Overrides the upstream Paragon token paths but supplies a literal color (`modify: null` drops the inherited color-yiq modifier so the brand hex is emitted as-is).",
+  "color": {
+    "$type": "color",
+    "badge": {
+      "text": {
+        "light": { "source": "$badge-light-color", "modify": null, "$value": "#8252fe" }
+      },
+      "bg": {
+        "light": { "source": "$badge-light-bg", "modify": null, "$value": "#8252fe26" }
+      }
+    }
+  }
+}

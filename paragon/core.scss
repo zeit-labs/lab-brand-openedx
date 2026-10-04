@@ -1,59 +1,41 @@
 // Assembled by `paragon build-scss` into the published `dist/core.css`.
 // `@use` the generated token CSS below so it ends up in the bundle. Non-tokenizable
 // CSS (custom @media, brand selectors) can also go here; font @imports go in _fonts.scss.
+//
+// Token overrides live in `paragon/tokens/**` and are emitted into
+// `./build/core/variables.css` and `./build/themes/<theme>/variables.css` by
+// `paragon build-tokens`. Add raw `--pgn-*` declarations here ONLY for values
+// that cannot be expressed as a design token.
 
 @use "./fonts";
 @use "./build/core/variables";
 // @use "./build/core/custom-media-breakpoints";
-
-:root {
-  --pgn-size-card-image-border-radius: 0.8rem;
-  --pgn-size-card-image-vertical-max-height: 200px;
-  --pgn-spacing-card-margin-grid-bottom: var(--pgn-spacing-spacer-4);
-  --pgn-typography-badge-font-size: 0.8rem;
-  --pgn-typography-font-family-base: Almarai, var(--pgn-typography-font-family-sans-serif);
-  --pgn-size-search-field-border-width-base: 1px;
-  --pgn-size-search-field-border-width-focus: 0.5px;
-  --pgn-size-badge-border-radius-base: 11px;
-  --pgn-color-badge-bg-light: #8252fe26;
-  --pgn-color-badge-text-light: #8252fe;
-}
 
 .pgn__data-table-wrapper {
   box-shadow: none;
 }
 
 .course-card {
-  padding: 24px
+  padding: 24px;
 }
 
 .pgn__card-grid .pgn__card {
-
   &:hover {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 30px;
-
     translate: 0px -4px;
   }
 }
 
-
 .pgn__card {
-  --pgn-typography-badge-font-weight: var(--pgn-typography-font-weight-semi-bold);
-
-  --pgn-spacing-badge-padding-x-base: .75rem;
-  --pgn-spacing-badge-padding-y: .25rem;
-
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 30px;
   border-radius: 1rem;
-  transition-duration: .1s;
+  transition-duration: 0.1s;
   transition-property: translate;
-
 
   .pgn__card-image-cap {
     border-radius: var(--pgn-size-card-image-border-radius);
     height: var(--pgn-size-card-image-vertical-max-height);
   }
-
 
   &.clickable.focus,
   &.clickable:focus,
@@ -81,6 +63,13 @@
   box-shadow: unset;
 }
 
-input[type="submit"]:active:not(:disabled), input[type="submit"]:focus:not(:disabled), input[type="button"]:active:not(:disabled), input[type="button"]:focus:not(:disabled), button:active:not(:disabled), button:focus:not(:disabled), .button:active:not(:disabled), .button:focus:not(:disabled) {
+input[type="submit"]:active:not(:disabled),
+input[type="submit"]:focus:not(:disabled),
+input[type="button"]:active:not(:disabled),
+input[type="button"]:focus:not(:disabled),
+button:active:not(:disabled),
+button:focus:not(:disabled),
+.button:active:not(:disabled),
+.button:focus:not(:disabled) {
   box-shadow: none;
 }

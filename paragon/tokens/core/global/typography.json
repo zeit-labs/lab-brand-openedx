@@ -3,6 +3,11 @@
     "font": {
       "family": {
         "$type": "fontFamily",
+        "base": {
+          "source": "$font-family-base",
+          "$value": "Almarai, 'Helvetica Neue', Arial, sans-serif",
+          "$description": "Brand default font family used by the marketing site."
+        },
         "sans": {
           "serif": {
             "source": "$font-family-sans-serif",
