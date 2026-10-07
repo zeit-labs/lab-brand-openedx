@@ -1,0 +1,21 @@
+{
+  "spacing": {
+    "$type": "dimension",
+    "card": {
+      "margin": {
+        "grid-bottom": { "source": "$card-grid-margin-bottom", "$value": "{spacing.spacer.4}" }
+      }
+    }
+  },
+  "size": {
+    "$type": "dimension",
+    "card": {
+      "image": {
+        "vertical": {
+          "max-height": { "source": "$card-image-vertical-max-height", "$value": "200px" }
+        },
+        "border-radius": { "source": "$card-image-border-radius", "$value": "0.8rem" }
+      }
+    }
+  }
+}

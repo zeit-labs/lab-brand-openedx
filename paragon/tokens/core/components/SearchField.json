@@ -1,0 +1,13 @@
+{
+  "size": {
+    "$type": "dimension",
+    "search-field": {
+      "border": {
+        "width": {
+          "base": { "source": "$search-border-width", "$value": "1px" },
+          "focus": { "source": "$search-border-focus-width", "$value": ".5px" }
+        }
+      }
+    }
+  }
+}
