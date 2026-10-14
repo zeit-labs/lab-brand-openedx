@@ -1,0 +1,8 @@
+{
+  "elevation": {
+    "$type": "shadow",
+    "data-table": {
+      "box-shadow": { "source": "$data-table-box-shadow", "$value": "none" }
+    }
+  }
+}

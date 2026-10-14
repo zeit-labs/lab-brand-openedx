@@ -1,0 +1,12 @@
+{
+  "color": {
+    "$type": "color",
+    "bg": {
+      "active": {
+        "source": "$component-active-bg",
+        "$value": "#111",
+        "$description": "Active background color."
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "color": {
+    "$type": "color",
+    "brand": {
+      "100": { "source": "$brand-100", "modify": null, "$value": "#f9f9f9", "$description": "Brand color of level 100." },
+      "200": { "source": "$brand-200", "modify": null, "$value": "#eee", "$description": "Brand color of level 200." },
+      "300": { "source": "$brand-300", "modify": null, "$value": "#ccc", "$description": "Brand color of level 300." },
+      "400": { "source": "$brand-400", "modify": null, "$value": "#bbb", "$description": "Brand color of level 400." },
+      "500": { "source": "$brand-500", "$value": "{color.brand.base}", "$description": "Brand color of level 500." },
+      "600": { "source": "$brand-600", "modify": null, "$value": "#888", "$description": "Brand color of level 600." },
+      "700": { "source": "$brand-700", "modify": null, "$value": "#444", "$description": "Brand color of level 700." },
+      "base": { "source": "$brand", "$value": "#0a0a0a", "$description": "Basic brand color." }
+    },
+    "primary": {
+      "base": { "source": "$primary", "$value": "{color.brand.base}", "$description": "Basic primary color." },
+      "700": { "source": "$primary-700", "modify": null, "$value": "#444", "$description": "Primary color of level 700." }
+    },
+    "gray": {
+      "200": { "source": "$gray-200", "$value": "#eee", "$description": "Gray color of level 200." }
+    },
+    "info": {
+      "500": { "source": "$info-500", "$value": "#265a91", "$description": "Info color of level 500." }
+    }
+  }
+}

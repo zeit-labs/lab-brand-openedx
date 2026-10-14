@@ -3,13 +3,18 @@
     "$type": "dimension",
     "card": {
       "margin": {
-        "grid-bottom": { "source": "$card-grid-margin-bottom", "$value": "{spacing.spacer.4}" }
+        "grid-bottom": { "source": "$card-grid-margin-bottom", "$value": "2rem" }
       }
     }
   },
   "size": {
     "$type": "dimension",
     "card": {
+      "focus": {
+        "border": {
+          "width": { "source": "$card-focus-border-width", "$value": "0" }
+        }
+      },
       "image": {
         "vertical": {
           "max-height": { "source": "$card-image-vertical-max-height", "$value": "200px" }

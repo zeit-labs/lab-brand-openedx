@@ -1,0 +1,14 @@
+{
+  "typography": {
+    "form": {
+      "input": {
+        "font": {
+          "size": {
+            "$type": "dimension",
+            "base": { "source": "$input-font-size", "$value": "1rem" }
+          }
+        }
+      }
+    }
+  }
+}

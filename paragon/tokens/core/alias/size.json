@@ -1,0 +1,12 @@
+{
+  "size": {
+    "$type": "dimension",
+    "border": {
+      "radius": {
+        "base": { "source": "$border-radius", "$value": "1rem", "$description": "Default border radius." },
+        "lg": { "source": "$border-radius-lg", "$value": "1.5rem", "$description": "Large border radius." },
+        "sm": { "source": "$border-radius-sm", "$value": "0.7rem", "$description": "Small border radius." }
+      }
+    }
+  }
+}

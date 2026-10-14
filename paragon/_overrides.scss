@@ -1,0 +1,125 @@
+:root {
+  // overrides that don't fit in paragon tokens `./tokens/*`
+  --pgn-color-card-divider-bg: initial;
+  --pgn-elevation-box-shadow-down-1: var(
+      --pgn-elevation-box-shadow-down-1-1-offset-x
+    )
+    var(--pgn-elevation-box-shadow-down-1-1-offset-y)
+    var(--pgn-elevation-box-shadow-down-1-1-blur)
+    var(--pgn-elevation-box-shadow-down-1-1-color);
+  --pgn-elevation-box-shadow-down-2: var(--pgn-elevation-box-shadow-down-1);
+}
+
+.pgn__data-table-wrapper {
+  box-shadow: none;
+}
+
+.course-card {
+  padding: 24px;
+}
+
+.pgn__card-grid .pgn__card:hover {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 30px;
+  translate: 0px -4px;
+}
+
+.pgn__card {
+  --pgn-typography-badge-font-weight: var(
+    --pgn-typography-font-weight-semi-bold
+  );
+
+  --pgn-spacing-badge-padding-x-base: 0.75rem;
+  --pgn-spacing-badge-padding-y: 0.25rem;
+
+  border-radius: 1rem;
+  transition-duration: 0.1s;
+  transition-property: translate;
+
+  .pgn__card-image-cap {
+    border-radius: var(--pgn-size-card-image-border-radius);
+    height: var(--pgn-size-card-image-vertical-max-height);
+  }
+
+  &,
+  &.clickable.focus,
+  &.clickable:focus,
+  &.clickable:hover {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 30px;
+  }
+
+  .pgn__card-header {
+    --pgn-spacing-card-spacer-x: 0;
+
+    .pgn__card-header-subtitle-sm {
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row-reverse;
+    }
+
+    .pgn__card-header-actions {
+      margin-inline-end: var(--pgn-spacing-spacer-base);
+    }
+  }
+
+  .pgn__card-footer {
+    padding: 0;
+  }
+}
+
+.pgn__searchfield {
+  border-radius: 6px;
+  overflow: auto;
+}
+
+.pgn__data-table-layout-wrapper .pgn__data-table-layout-sidebar {
+  box-shadow: unset;
+}
+
+input[type="submit"]:active:not(:disabled),
+input[type="submit"]:focus:not(:disabled),
+input[type="button"]:active:not(:disabled),
+input[type="button"]:focus:not(:disabled),
+button:active:not(:disabled),
+button:focus:not(:disabled),
+.button:active:not(:disabled),
+.button:focus:not(:disabled) {
+  box-shadow: none;
+}
+
+.menu-trigger {
+  border-radius: var(--pgn-size-border-radius-lg);
+}
+
+.course-about-intro {
+  .pgn__card {
+    padding: 0 20px 20px;
+  }
+}
+
+aside .pgn__vstack {
+  border-top: 1px solid var(--pgn-color-gray-200);
+}
+
+.pgn__searchfield {
+  .pgn__searchfield_wrapper {
+    border-radius: var(--pgn-size-border-radius-lg);
+  }
+
+  .form-control {
+    border-radius: var(--pgn-size-border-radius-lg);
+  }
+
+  .pgn__searchfield__button.btn[type="submit"] {
+    border-radius: var(--pgn-size-border-radius-lg);
+  }
+}
+
+.pgn__card.clickable.focus:before,
+.pgn__card.clickable:focus:before,
+.pgn__data-table__selectable-card.is-selected > :first-child:before {
+  box-shadow: var(--pgn-elevation-box-shadow-down-1-1-offset-x)
+    var(--pgn-elevation-box-shadow-down-1-1-offset-y)
+    var(--pgn-elevation-box-shadow-down-1-1-blur)
+    var(--pgn-elevation-box-shadow-down-1-1-color);
+}

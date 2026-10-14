@@ -1,0 +1,18 @@
+{
+  "_comment": "Overrides the first shadow of the `down-1` stack (offset-y, blur, color) while keeping the second shadow untouched. The composed `--pgn-elevation-box-shadow-down-1`/`-2` abstractions are not emittable from the brand token pipeline and stay in SCSS.",
+  "elevation": {
+    "$type": "shadow",
+    "box-shadow": {
+      "down": {
+        "1": {
+          "source": "$box-shadow-down-1",
+          "$value": [
+            { "color": "#0000001a", "offsetX": "0", "offsetY": "10px", "blur": "30px" },
+            { "color": "rgba(0, 0, 0, .15)", "offsetX": "0", "offsetY": ".0625rem", "blur": ".25rem" }
+          ],
+          "$description": "Bottom box shadow of level 1."
+        }
+      }
+    }
+  }
+}

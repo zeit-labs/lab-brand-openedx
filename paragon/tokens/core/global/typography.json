@@ -5,7 +5,7 @@
         "$type": "fontFamily",
         "base": {
           "source": "$font-family-base",
-          "$value": "Almarai, 'Helvetica Neue', Arial, sans-serif",
+          "$value": "Poppins, var(--pgn-typography-font-family-sans-serif)",
           "$description": "Brand default font family used by the marketing site."
         },
         "sans": {
@@ -67,7 +67,7 @@
         "h4": {
           "base": {
             "source": "$h4-font-size",
-            "$value": "1.5rem",
+            "$value": "1.25rem",
             "$description": "Font size of heading level 4."
           },
           "mobile": {
@@ -132,6 +132,11 @@
       },
       "weight": {
         "$type": "fontWeight",
+        "bold": {
+          "source": "$font-weight-bold",
+          "$value": "500",
+          "$description": "Bold font weight."
+        },
         "display": {
           "1": {
             "source": "$display1-weight",

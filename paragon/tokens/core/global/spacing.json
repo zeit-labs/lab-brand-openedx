@@ -1,0 +1,12 @@
+{
+  "spacing": {
+    "$type": "dimension",
+    "spacer": {
+      "base": {
+        "source": "$spacer",
+        "$value": "1.25rem",
+        "$description": "Basic space value"
+      }
+    }
+  }
+}
